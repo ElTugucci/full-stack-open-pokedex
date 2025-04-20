@@ -3,15 +3,18 @@ name: Hello World!
 on:
   push:
     branches:
-      -main
+      - main
 
 jobs:
   hello_world_job:
     runs-on: ubuntu-20.04
     steps:
-      -name: Say Hello
-      run: |
+      - name: Say Hello
+    run: |
        echo "Hello World!"
-       -name: Show Date
+       - name: Show Date
+       run: |
        date 
-        ls
+       - name: Show Directory Content 
+       run: |
+       ls
