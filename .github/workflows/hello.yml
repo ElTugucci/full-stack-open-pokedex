@@ -9,12 +9,10 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-20.04
     steps:
+
       - name: Say Hello
-    run: |
-       echo "Hello World!"
-       - name: Show Date
-       run: |
-       date 
-       - name: Show Directory Content 
-       run: |
-       ls
+        run: echo "Hello World!"
+      - name: Show Date 
+        run: date
+      - name: Show Directory Content 
+        run: ls
