@@ -35,7 +35,8 @@ jobs:
         run: npm run build
      
       - name: Notify failure
-        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
           args: 'The Build for {{ EVENT_PAYLOAD.repository.full_name }} has failed.'
