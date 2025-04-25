@@ -1,0 +1,17 @@
+name: Periodic healthcheck
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  healthcheck_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check the deployed app health
+        uses: jtalk/url-health-check-action@v4
+        with:
+          url: https://full-stack-open-pokedex-aged-wave-6105.fly.dev/
+          max-attempts: 3
+          retry-delay: 5s
