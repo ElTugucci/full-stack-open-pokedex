@@ -1,6 +1,9 @@
 name: Periodic healthcheck
 
 on:
+  push:
+    branches:
+      - main
   schedule:
   - cron: '30/5 11-14 25-26 4-5 *'
  
