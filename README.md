@@ -1,3 +1,7 @@
+Exercises 11.20-11
+
+[BlogList with CI/CD](https://github.com/ElTugucci/fso-part11-bloglist-with-CI-CD)
+
 # Full Stack open CI/CD
 
 This repository is used for the CI/CD module of the Full stack open course
@@ -13,3 +17,4 @@ Start by running `npm install` inside the project folder
 `npm run eslint` to run eslint
 `npm run build` to make a production build
 `npm run start-prod` to run your production build
+
