@@ -66,7 +66,6 @@ jobs:
           args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed.'
   
   tag_release: 
-
     if: ${{ github.ref == 'refs/heads/main' && !contains(join(github.event.commits.*.message, ' '), '#skip') }}
     needs: [simple_deployment_pipeline]
     runs-on: ubuntu-latest
