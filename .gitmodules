@@ -1,0 +1,3 @@
+[submodule "bloglist"]
+	path = bloglist
+	url = https://github.com/ElTugucci/fso-part11-bloglist-with-CI-CD
